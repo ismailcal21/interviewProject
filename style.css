@@ -1,0 +1,863 @@
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+} 
+
+html{
+   scroll-behavior: smooth;
+}
+
+.png1{
+   width: 20%;
+   position: absolute;
+   margin-top: 35%;
+   margin-left: 24%;
+   z-index: 1;
+}
+
+.common-btn:hover{
+   border-radius: 20px;
+   border-color: aqua;
+   transition: 1s;
+   background: transparent;
+}
+
+#sideNav{
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    margin-bottom: 00px;
+    background: #f67c92;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    transition: 1s;
+    animation-name: sideNav;
+    animation-duration: 20s;
+    
+}
+@keyframes sideNav {
+   0%   {background-color: #f67c92;}
+   25%  {background-color: rgb(156, 6, 14);}
+   50%  {background-color: blue;}
+   100% {background-color: green;}
+ }
+.sideNav-div{
+   position: relative;
+   height: 100%;
+   width: 20%;
+}
+.sideNav-div img{
+   width: 50%;
+   position: absolute;
+}
+.sideNav-div img:hover{
+   width: 60%;
+   transition: all 2s;
+   cursor: pointer;
+   
+}
+
+.btn-div{
+   width: 20%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+.signUp{
+   background-color: black;
+}
+.signUp a{
+   color: white;
+   text-decoration: none;
+   font-size: 15px;
+}
+.btn-div .signUp,.login{
+   padding: 5px 30px;
+   white-space: nowrap;
+   border-radius: 20px;
+   border: none;
+   
+}
+.btn-div  .login:hover{
+   padding: 5px 30px;
+   white-space: nowrap;
+   border-radius: 20px;
+   border: none;
+   background-color: bisque;
+   cursor: pointer;
+   transition: all ease-out 1s;
+   
+}
+.btn-div .login  a{
+   text-decoration: none;
+   color: black;
+   font-size: 15px;
+}
+
+
+#sideNav:hover ul li a{
+    color: black;
+    transition: 1s;
+    
+}
+#sideNav ul {
+    display: flex;
+}
+.ilk-ul{
+    width: 40%;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menuBtn{
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+}
+
+#header{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(199, 115, 66, 0.116), rgba(50, 184, 184, 0.445)), url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.container{
+    margin-right: 100px;
+    margin-left: 100px;
+    
+}
+.container h1::first-letter{
+   font-size: 50px;
+   color: #f67c92;
+}
+.logo{
+    margin-top: 100px;
+
+}
+.header-text{
+    max-width: 350px;
+    margin-top: 140px;
+}
+.square{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #f67c92;
+    margin: 15px 0;
+}
+.common-btn{
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #f67c92;
+    font-weight: bold;
+    cursor: pointer;
+}
+p{
+    font-size: 15px;
+    line-height: 18px;
+    color: #777;
+}
+
+.header-text button{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.line-1{
+    width: 15px;
+    height: 15px;
+    background: #f67c92;
+    display: inline-block;
+}
+.line-2{
+    width: 80px;
+    height: 1px;
+    background: #f67c92;
+    display: inline-block;
+}
+.line-3{
+    width: 60px;
+    height: 1px;
+    background: #f67c92;
+    display: inline-block;
+}
+
+.line{
+    line-height: 8px;
+}
+
+/* back-img */
+
+
+.back-img{
+   width: 70%;
+   height: 1000px;
+   margin: 250px auto;
+   background-image: url(images/greg-rosenke-6QnEf_b47eA-unsplash.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+
+   
+}
+.back-img, .back-img2 p{
+   color: #fff;
+}
+.back-img p{
+   color: #fff;
+   
+}
+.back-img2{
+   width: 70%;
+   height: 1000px;
+   margin: 250px auto;
+   background-image: url(images/pexels-pixabay-235986.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+
+   
+}
+
+
+ /* about */
+
+ #about , #offer{
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+ }
+
+ .about-left-col{
+    width: 50%;
+ }
+ .about-right-col{
+    width: 50%;
+    text-align: right;
+ }
+
+ .about-left-col img {
+    width: 100%;
+ }
+
+ .about-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+ }
+
+ .about-text h2 {
+    margin: 50px 0 10px;
+    font-size: 28px;
+    font-style: italic;
+ }
+ .about-text h3{
+    font-weight: lighter;
+    font-weight: 400;
+    font-style: italic;
+ }
+
+ /*----features----*/
+
+ #features{
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
+
+ .feature-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+ .feature-col{
+    width: 25%;
+    text-align: center;
+ }
+
+ .feature-col img{
+    width: 100px;
+ }
+
+ .feature-col h4{
+   margin-bottom: 15px;
+   font-size: 20px;
+   font-weight: 400;
+
+ }
+
+ .feature-btn{
+    margin: 80px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+ }
+
+ .feature-btn .line{
+    text-align: right;
+    display: inline-block;
+    margin-right: 25px;
+ }
+
+
+ /* courses */
+
+ #courses{
+    padding: 100px 0;
+ }
+
+ .course-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ .course-right-col{
+    width: 50%;
+ }
+ .course-right-col img{
+    width: 100%;
+ }
+
+ .course-left-col{
+    width: 50%;
+ }
+
+ .course-text{
+    max-width: 350px;
+    margin-bottom: 20px;
+ }
+
+ .course-text button {
+    margin: 30px;
+ }
+
+/* offer */
+
+ #offer button{
+    margin: 30px 0;
+ }
+
+ .contact-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+
+ .contact-left-col, .contact-right-col{
+    
+    width: 50%;
+ }
+
+ form{
+    max-width: 350px;
+    margin: 30px 0;
+ }
+
+ form input {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid #fab3c4;
+ }
+
+ .btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .btn-box button{
+    width: 48%;
+ }
+
+ /* footer */
+
+ #footer{
+    padding: 50px 0 30px;
+
+ }
+
+ .footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+
+ .footer-left-col{
+    width: 50%;
+    margin-top: 60px;
+ }
+ .footer-right-col{
+    width: 50%;
+    margin-top: 60px;
+ }
+
+ .footer-links{
+    display: flex;
+    
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+
+ .link-title h4{
+    color: #fab3c4;
+    margin-bottom: 20px;
+ }
+
+ .link-title small{
+    font-size: 13px;
+    color: #777;
+ }
+
+ .footer-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+ }
+
+ .footer-logo img{
+    width: 100px;
+ }
+ .footer-logo button{
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+ }
+
+ .copyright-text, .footer-logo{
+    width: 40%;
+ }
+
+ /* social-icons  */
+
+ .social-icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+ }
+
+ .social-icons img{
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+ }
+
+ .scroll-btn{
+   position: absolute;
+   margin-right: 40px;
+   right: 10px;
+   
+ }
+
+ @media screen and (max-width: 770px) {
+   .png1{
+      width: 40%;
+      position: absolute;
+      margin-top: 500px;
+      margin-left: 60%;
+   }
+   .png2{
+      width: 40%;
+      position: absolute;
+      margin-top: 500px;
+      margin-left: 10%;
+   }
+   #header {
+      background-image: none;
+    }
+    #sideNav .ilk-ul{
+        display: none;
+    }
+    #sideNav{
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      margin: auto;
+    }
+    .container{
+        margin-right: 50px;
+        margin-left: 50px;
+        
+    }
+    
+    .logo{
+        margin-top: 27px;
+        width: 70px;
+    
+    }
+    .header-text{
+        
+        margin-top: 10px;
+        
+        
+    }
+    .square{
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        background: #f67c92;
+        margin: 15px 0;
+    }
+    h1{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    #menuBtn{
+        width: 40px;
+       
+        right: 50px;
+        
+       
+    }
+    .common-btn{
+        padding: 10px 16px;
+        
+    }
+    
+    .social-icons img{
+        width: 14px;
+        margin: 15px auto;
+        
+     }
+
+     /* about */
+
+     .about-left-col,.about-right-col{
+        width: 100%;
+     }
+     .about-left-col img{
+      display: none;
+     }
+     .about-text{
+       
+        margin: 50px 50px 0;
+        display: inline-block;
+     }
+    
+     .about-text h2 {
+        font-size: 18px;
+     }
+
+     /* feature */
+
+     #features{
+        padding-top: 20px;
+        padding-bottom: 20px;
+     }
+    
+     .feature-row{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+     }
+     .feature-col{
+        width: 90%;
+        text-align: center;
+     }
+    
+     .feature-col img{
+        width: 20%;
+     }
+    
+     .feature-col h4{
+       margin-bottom: 10px;
+       font-size: 20px;
+       font-weight: 400;
+    
+     }
+    
+     .feature-btn{
+        margin: 50px auto 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+     }
+    
+     .feature-btn .line{
+        text-align: right;
+        display: inline-block;
+        margin-right: 25px;
+     }
+
+     /* course */
+
+     #courses{
+      padding: 40px 0;
+   }
+
+   
+  
+   .course-row{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+   .course-right-col{
+      width: 90%;
+   }
+   .course-right-col img{
+      width: 100%;
+      display: none;
+   }
+  
+   .course-left-col{
+      width: 90%;
+   }
+  
+   .course-text{
+      margin: auto;
+      margin-bottom: 20px;
+   }
+
+   .course-text h1{
+      font-size: 30px;
+      
+   }
+  
+   .course-text button {
+      margin: 30px;
+      margin-left: 0;
+   }
+
+   /* offer */
+
+   #offer{
+      padding: 0;
+   }
+  
+   #offer button{
+      margin: 10px 0;
+   }
+  
+   .contact-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+  
+   .contact-left-col, .contact-right-col{
+      
+      width: 90%;
+   }
+  
+   form{
+      
+      margin: 30px 0;
+   }
+  
+   form input {
+      width: 100%;
+      padding: 12px 10px;
+      margin-bottom: 5px;
+      outline: none;
+      box-shadow: none;
+      box-sizing: border-box;
+      border: 2px solid #fab3c4;
+   }
+  
+   .btn-box{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+  
+   .btn-box button{
+      width: 48%;
+   }
+
+   /* contact */
+
+   #contact{
+      margin-top: 60px;
+   }
+
+   .contact-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+  
+   .contact-left-col, .contact-right-col{
+      
+      width: 100%;
+   }
+   .contact-left-col h1{
+      font-size: 20px;
+   }
+
+   .contact-right-col img {
+      display: none;
+   }
+
+   #footer{
+      padding: 30px 0 30px;
+  
+   }
+  
+   .footer-row{
+      display: flex;
+      
+      flex-direction: column;
+      
+      flex-wrap: wrap;
+   }
+  
+   .footer-left-col{
+      width: 50%;
+      text-align: center;
+      margin-top: 60px;
+   }
+   .footer-right-col{
+      width: 100%;
+      margin-top: 10px;
+   }
+  
+   .footer-links{
+      display: flex;
+      
+      justify-content: space-around;
+      flex-wrap: wrap;
+   }
+  
+   .link-title h4{
+      color: #fab3c4;
+      margin-bottom: 5px;
+      font-size: 20px;
+   }
+   .link-title{
+      margin-bottom: 30px;
+   }
+  
+   .link-title small{
+      font-size: 13px;
+      color: #777;
+   }
+  
+   .footer-info{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: auto;
+      
+   }
+  
+   .footer-logo img{
+      width: 100%;
+   }
+   .footer-logo button{
+      
+      margin-top: 10px;
+      font-size: 10px;
+   }
+  
+   .copyright-text, .footer-logo{
+      width: 40%;
+   }
+
+   /* sideNav */
+
+   .sideNav-div{
+      position: relative;
+      height: 100%;
+      width: 25%;
+   }
+   .sideNav-div img{
+      width: 90%;
+      position: absolute;
+   }
+   .sideNav-div img:hover{
+      width: 100%;
+      transition: all 2s;
+      cursor: pointer;
+      
+   }
+   
+   .btn-div{
+      width: 75%;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      gap:5px;
+   }
+   .signUp{
+      background-color: black;
+   }
+   .signUp a{
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+   }
+   .btn-div .signUp,.login{
+      padding: 5px 10px;
+      white-space: nowrap;
+      border-radius: 20px;
+      border: none;
+      
+   }
+   .btn-div  .login:hover{
+      
+      white-space: nowrap;
+      border-radius: 20px;
+      border: none;
+      background-color: bisque;
+      cursor: pointer;
+      transition: all ease-out 1s;
+      
+   }
+  
+   .scroll-btn{
+      position: absolute;
+      margin-right: 40px;
+
+    
+      
+      
+    }
+  }
